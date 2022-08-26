@@ -22,3 +22,6 @@ arquivoFinal = caminhoArquivos[0][:-4]
 #Cria arquivo final na pasta
 with open(arquivoFinal + " - Mesclado.pdf", "wb") as output_stream:
     output.write(output_stream)
+
+msgBox(None,"PDF gerado com sucesso","pdfMerge",0)
+sys.exit()
