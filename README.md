@@ -1,22 +1,22 @@
 # pdfMerge
 
-Um programa em python que mescla arquivos de PDF utilizando o menu de contexto do windows.
+A simple python script to treat pdf files
 
-## Instalação
-- Faça do arquivo source code em .zip da versão mais atualizada do [pdfMerge](https://github.com/gvtrindade/pdfMerge/releases)
-- Descompacte o arquivo
-- Certifique-se de que o Python v3.x está instalado utilizando o seguinte comando no prompt de comando:
+## Functionalities
+- Join pdf files
+- Convert jpg, png and jpeg to pdf
+- Join pdf and image files into a single pdf
+- Add a custom name to the merged file
 
-      python --version
+## Usage
+```
+pdfmerge file1.pdf/jpg <file2.pdf/jpg> ... <-o output.pdf>
+```
 
-- Execute o Instalador.bat
-
-## Desinstalação
-- Execute o Desinstalador.bat
-
-## Uso
-- Selecione os arquivos a serem unidos
-- Clique com o botão direito do mouse em um deles
-- Navegue até a opção "Enviar Para"
-- Clique na opção pdfMerge
-- Aguarde a criação do arquivo mesclado
+## Installation
+1. Clone the repository
+2. Run `install.sh`
+3. Add the alias in your `.zshrc` file
+```
+alias pdfmerge="<path_to_project>/venv/bin/python && <path_to_project>/main.py"
+```
